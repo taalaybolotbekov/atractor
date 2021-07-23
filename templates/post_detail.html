@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="title">Title:  {{ post.title }}</h1>
+    <small>User name and id   <strong>{{post.user}} {{post.user.id}}</strong></small>
+    <p>Category title:   <strong>{{ post.category.title }}</strong></p>
+    <p>Description:    {{ post.description }}</p>
+{% endblock %}
